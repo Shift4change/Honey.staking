@@ -113,9 +113,6 @@ class Cryptocurrencies extends Component {
                 <div class="card-footer">
                     <a href="https://www.coindesk.com/" target="_blank" rel="noopener noreferrer"><button>Click Here</button></a>
                 </div>
-                <div class="card-footer">
-                    <button onClick="window.location.href = 'https://www.coindesk.com/';">Click Here</button>
-                </div>
             </div>
 
             <div className="card col-xs-12" style={{
@@ -136,9 +133,7 @@ class Cryptocurrencies extends Component {
                 <div class="card-footer">
                     <a href="https://www.cointelegraph.com/" target="_blank" rel="noopener noreferrer"><button>Click Here</button></a>
                 </div>
-                <div class="card-footer">
-                    <button onClick="window.location.href = 'https://cointelegraph.com/';">Click Here</button>
-                </div>
+                
             </div>
 
 
