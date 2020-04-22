@@ -42,7 +42,7 @@ class About extends Component {
 
                             </li>
                             <li>
-                                Back-End Team Memebers: <strong style={{
+                                Back-End Team Members: <strong style={{
                                     display: "block",
                                 }}>Trion Bailey :
                                     <a href="https://github.com/trionb" target="_blank" rel="noopener noreferrer" className="github"> <i class="fab fa-github-square"></i></a>
