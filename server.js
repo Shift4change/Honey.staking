@@ -7,6 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const path = require('path')
 require('dotenv').config()
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
