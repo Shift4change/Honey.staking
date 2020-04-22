@@ -2,6 +2,7 @@ const express = require("express");
 const db = require('./models')
 const mongoose = require("mongoose");
 // const routes = require("./routes");
+const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3001;
 const bcrypt = require('bcryptjs')
@@ -104,6 +105,10 @@ app.post('/api/logout', async (req, res) => {
       res.status(500).send(error)
   }
 })
+
+app.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "client/build/index.html"));
+});
 
 // Start the API server
 app.listen(PORT, function() {

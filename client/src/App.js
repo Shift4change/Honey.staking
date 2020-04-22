@@ -20,13 +20,12 @@ import Home from "./pages/Home";
 import Cardano from "./pages/Cardano";
 import Cryptocurrencies from "./pages/Cryptocurrencies";
 import StakingService from "./pages/StakingService";
-// import Contact from "./pages/Contact";
+
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import Wallets from "./pages/Wallets";
 import cardano from './components/cardano.svg';
-// import homeIcon from "./components/home-outline.svg"
-// import Crypto from "./components/cash-outline.svg"
+
 import stake from "./components/stakeholder.svg"
 import logo from "./components/logo.svg"
 import team from "./components/team.svg"
@@ -95,7 +94,7 @@ function App() {
 
 
   ]
-  // function toggle()
+ 
 
   return (
 
