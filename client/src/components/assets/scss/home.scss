@@ -1,18 +1,27 @@
 #master{
-    background-color: #07454715 ;
-
+    // background-color: #07454715 ;
+    background-color: #07454715;
+    color: black;
     li{
         list-style-type: none;
     }
 #welcome{
     padding-top:110px ; 
-    // background-color: #5fdadf;
+    background-color: #5fdadf;
     // color: rgb(53, 52, 52);
-    background-image: image(solve8);
+    // background-image: image(sky);
     width: 100%;
     padding-bottom: 95px;
     text-align: center;
    
+    #tree{
+        padding-left: 67px;
+        margin-left: -8px;
+        text-indent: -67px; 
+        // max-height: 50px;
+     //    overflow: hidden;
+        padding-top: 0;
+    }
   
   h1{
     color: rgb(52, 53, 53);
@@ -36,7 +45,7 @@
 
 
 #centralize{
-    // background-color: rgba(132, 186, 202, 0.103);
+    
     
     h3{
 
@@ -94,7 +103,7 @@
     padding-right:5px;
     
 }
-#decent{
+#decent1{
     
     // width: 40%;
     height: 90%;
@@ -104,6 +113,21 @@
    img{
     width: 45%;
     height: 90%;
+   margin-top:-10px;
+   padding-right: 15px;
+}
+}
+
+#decent2{
+    
+    // width: 40%;
+    height: 90%;
+   margin-top:-13px;
+   padding-left: 20px;
+   background-color: rgba(132, 186, 202, 0.103);
+   img{
+    width: 45%;
+    // height: 90%;
    margin-top:-10px;
    padding-right: 15px;
 }

@@ -1,0 +1,79 @@
+.master{
+    background-color: #07454715 ;
+
+    li{
+        list-style-type: none;
+    }
+    #cardano{
+        padding-top:110px ; 
+        background-color: #5fdadf;
+        // color: rgb(53, 52, 52);
+        // background-image: image(sky);
+        width: 100%;
+        padding-bottom: 30px;
+        text-align: center;
+        // padding-bottom: 212px;
+        // margin-top: 61px;
+        // padding-top:206px;
+
+
+        h1{padding-top: 10px;
+        }
+    }
+
+    // .row{
+    //     content:"";
+    //     clear: both;
+    //     display: table;
+
+     
+    // }
+    .column1 {
+        float: left;
+        width: 50%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .column2 {
+        float: left;
+        width: 50%;
+        padding-left: 10px;
+     
+     
+        
+      }
+   
+    #imgcardano{
+       text-indent: -157px; 
+       max-height: 50px;
+    //    overflow: hidden;
+       padding-top: 0;
+
+    }
+    #carda{
+        .column {
+            float: left;
+          }
+          
+          .left {
+            width: 25%;
+          }
+          
+          .right {
+            width: 75%;
+          }
+         
+    }
+    .card{
+        // padding-top: 5px;
+        margin-top: 10px;
+    }
+
+
+
+}

@@ -3,10 +3,17 @@ import { Router } from "@reach/router";
 
 import "./components/assets/scss/profile.scss"
 import "./components/assets/scss/home.scss";
+import "./components/assets/scss/staking.scss";
+import "./components/assets/scss/about.scss";
+import "./components/assets/scss/profile.scss";
+import "./components/assets/scss/signup.scss";
+import "./components/assets/scss/login.scss";
+import "./components/assets/scss/wallets.scss";
+
 
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import Cryptomarkets from './components/Cryptomarkets';
-
+import "./components/assets/scss/cardano.scss";
 
 import ResponsiveNavigation from "./components/ResponsiveNavigation";
 import About from "./pages/About";
@@ -17,6 +24,7 @@ import StakingService from "./pages/StakingService";
 // import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
+import Wallets from "./pages/Wallets";
 import cardano from './components/cardano.svg';
 // import homeIcon from "./components/home-outline.svg"
 // import Crypto from "./components/cash-outline.svg"
@@ -31,7 +39,6 @@ import logout from "./components/logout.svg"
 import Profile from "./pages/Profile"
 import signup from "./components/sign-up.svg"
 import profile from "./components/avatar.svg"
-
 
 function App() {
   const navLinks = [
@@ -84,7 +91,8 @@ function App() {
       text: "Profile",
       path: "/profile",
       icon: profile
-    }
+    },
+  
 
 
   ]
@@ -111,12 +119,12 @@ function App() {
         <Cryptocurrencies path="/crypto" />
         <Cardano path="/cardano" />
         <StakingService path="/staking" />
+        <Wallets path ="/wallets" />
         <About path="/about" />
         {/* <Contact path="/contact" /> */}
         <Login path="/login" />
         <SignUp path="/signup" />
         <Profile path="/profile"></Profile>
-
       </Router>
       {/* </div> */}
     </div>

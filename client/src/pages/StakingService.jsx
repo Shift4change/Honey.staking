@@ -5,7 +5,7 @@ import staking from "./staking.png"
 class StakingService extends Component {
     render() {
         return (
-            <>
+            <div className="all" >
                 <div style={{
                     paddingTop: "120px",
                     backgroundColor: "#5FDADF",
@@ -21,7 +21,7 @@ class StakingService extends Component {
                         <div className="card" style={{
                             textAlign: "center",
                             padding: "20px",
-                            backgroundColor: "#306BAC"
+                            backgroundColor: "#6cace4"
                         }}>
                             <div className="card-image">
                                 <img src={staking} class="center"alt="staking" ></img>
@@ -36,7 +36,7 @@ class StakingService extends Component {
                         </div>
                     </div>
                 </div>
-            </>
+            </div>
 
         )
     }

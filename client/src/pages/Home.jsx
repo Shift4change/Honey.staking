@@ -8,6 +8,8 @@ import decent from "../components/assets/img/decent.png"
 import solve8 from "../components/assets/img/solve8.jpeg"
 // import solve7 from "../components/assets/img/solve7.jpeg"
 import bitcoin1 from "../components/assets/img/bitcoin1.jpeg"
+import tree from "../components/assets/img/tree.png"
+import sky from "../components/assets/img/sky1.jpeg"
 class Home extends Component {
     render() {
         return (
@@ -15,7 +17,8 @@ class Home extends Component {
 
 
                 <div style={{
-                    backgroundImage: "url(" + solve8 + ")",
+                    // backgroundImage: "url(" + sky + ")",
+                    // background:""
                     backgroundPosition: "center",
                     backgroundSize: "cover"
                     // backgroundImage: solve8
@@ -33,7 +36,10 @@ class Home extends Component {
                     {/* <h1> </h1>
                     <h3></h3> */}
 
+                    <div id="tree" style={{ width: '50px', height: '50px' }}  >
+                        <img src={tree} alt="ADA" />
 
+                    </div>
 
                 </div>
 
@@ -43,15 +49,16 @@ class Home extends Component {
                             <div >
                                 <img src={cent} align="right" alt="cent"></img>
                             </div>
-                            <h5>First lets take a look at what centralized systems look like vs. decentralized systems</h5>
+                            <h5>First lets take a look at what centralized systems look like.</h5>
+                            {/* like vs. decentralized systems */}
                             <ul>
-                                <li>A centralized system is a kind of system that requires you give your power, data or money to either a big corporation, a bank or, a government for convenience.</li>
-                                <li>Banks are a centralized - FOR profit business & systems that is are accessible to all! Especially the lower class and those in poorer countries!</li>
+                                <li>A centralized system is a kind of system that requires, to you give your power, data or money to either a big corporation, a bank or, a government for convenience.</li>
+                                <li>Banks are centralized - FOR profit systems that are not, accessible to all! Especially the lower class and those in poorer countries, 1.7 Billion Adults are un banked !</li>
                                 <li>Centralized systems confine you to their strict rules and regulations </li>
                                 <li>In Centralized systems you don't have control over your data </li>
                                 <li>You can lose your freedom of speech on a centralized platform and even be banned</li>
                                 <li>A very good example of the ramifications of a fully centralized system is China. A country that is using its digital power to control and suppress the people, where basic rights are being taken away, censorship is taking over and a social score is being implemented. </li>
-                                 
+
                             </ul>
 
                         </div>
@@ -72,14 +79,14 @@ class Home extends Component {
                 <div id="decentralize" className="hero column col-11 col-xs-12 container">
                     <div className="row">
                         <div className="column2">
-                            <div id="decent">
-                                <img src={decent} align="left" alt="decent"></img>
+                            <div id="decent1">
+                                <img src={decent} align="left"></img>
                             </div>
 
 
-                            <h5> Now lets take a look at what  decentralized systems look like</h5>
+                            <h5> Now lets take a look at what decentralized systems look like</h5>
                             <ul>
-                                <li>Decentralized system is a kind of system that has no central authority making decisions in the name of all participants. </li>
+                                <li>A Decentralized system is a kind of system that has no central authority making decisions in the name of all participants. </li>
                                 <li>Each participant, also known as ‘peer,’ makes their own autonomous decisions pursuing their own self-interest that may collide with the goals of other peers.</li>
                                 <li>In decentralized systems the participants directly interact with each other, share information, or, offer services to others.</li>
                                 <li>In an open, decentralized system, there are no limits or regulations for new users to access it because of country or their social and economic status.</li>
@@ -104,13 +111,14 @@ class Home extends Component {
                     // borderRadius: "25px",
                     // textAlign: "center"
 
-                }}id="decentralize" className="hero column col-11 col-xs-12 container">
+                }} id="decentralize" className="hero column col-11 col-xs-12 container">
                     <div className="row">
 
-                        <div id="decent">
-                            <img src={bitcoin1} align="left" alt="bitcoin"></img>
+                        <div id="decent2">
+
+                            <img style={{ height: "450px" }} src={bitcoin1} align="left"></img>
                         </div>
-                        
+
                         <h6>After the 2008 financial crash and bailout of the "to-big to fail" corporations and banks, </h6>
                         <h4>a new system of technology emerged!</h4>
                         <ul>
@@ -120,18 +128,66 @@ class Home extends Component {
                             <li>Not only can you own a pice of the system but you can transfer it</li>
                             <li>It is borderless </li>
                             <li>This system is deflationary</li>
-                            <li>It is used as a store of value because of its set supply</li>
+                            <li>It is used as a store of value, because of its set supply</li>
                             <li>Bitcoin is the first generation of cryptocurrencies aka. digital gold</li>
                             {/* <li> Decentralization began with bitcoin and continues with to expand throughout the globe</li> */}
                         </ul>
-                        <h3>We sincerely believe that decentralization began with bitcoin and that it continues to expand its reach with <a href="/cardano">Cardano</a>.</h3>
+                        <h3>We sincerely believe that decentralization began with bitcoin and that it continues to expand its reach with <a color="red" href="/cardano">Cardano</a>.</h3>
 
 
                     </div>
 
                 </div>
-                
-                <div className="form-group">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* <div className="form-group">
                     <div className="col-3">
                         <label className="form-label" textalign="center" htmlFor="input-example-8">Sign up for our newsletter</label>
                     </div>
@@ -177,7 +233,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
             </div>

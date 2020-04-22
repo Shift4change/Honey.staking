@@ -5,7 +5,7 @@ import blockC from "./blockC.jpg"
 class About extends Component {
     render() {
         return (
-            <>
+            <div className="all">
                 <div className="card" style={{
                     position: "absolute",
                     top: "70px",
@@ -98,7 +98,7 @@ class About extends Component {
                     <br></br>
                     <button class="btn btn-primary input-group-btn">Send Message</button>
                 </div> */}
-            </>
+            </div>
 
         );
     }

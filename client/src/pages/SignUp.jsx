@@ -54,6 +54,7 @@ class SignUp extends Component {
     }
     render() {
         return (
+            <div className="all">
             <div onSubmit={this.handleSubmit} className="container column col-4 col-xs-12"
                 style={{
                     paddingTop: "100px"
@@ -77,6 +78,7 @@ class SignUp extends Component {
                         }}
                     >Sign Up</button>
                 </form>
+            </div>
             </div>
         );
     }

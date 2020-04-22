@@ -7,13 +7,32 @@ class Profile extends Component {
 
         this.state = {
             first_name: "",
-            errors: {}
+            errors: {},  
+            selectedFile: null
         }
     }
-    //setting name tp profile page
+
+  fileSelectedHandler = event => {
+    this.setState({
+        selectedFile:event.target.files[0]
+    })
+      console.log(event.target.files[0]);
+  }
+  fileUploadHandle =() => {
+     axios.post('')
+  }
+    //set up edit functionality 
+    
+    // handleFormChange(event) {
+    //     console.log("handle change", event)
+    
+    // }
+    //setting name to profile page
     componentWillMount() {
         this.setState({
-            first_name: localStorage.getItem("firstName")
+            first_name: localStorage.getItem("firstName"),
+            selectedFile: localStorage.getItem("name")
+            
         })
     }
     logout = () => {
@@ -26,7 +45,7 @@ class Profile extends Component {
     }
     render() {
         return (
-
+            <div className="all">
             <div className="container" style={{
                 paddingTop: "60px",
                 textAlign: "center",
@@ -43,6 +62,8 @@ class Profile extends Component {
                         borderRadius: "100px",
                         position: "relative"
                     }} />
+                    <input type="file" onChange={this.fileSelectedHandler} htmlvalue="Upload" className="uploadPic"/>
+                    <button onClick={this.fileSelectedHandler}>Upload</button>
                     <h3>Bio:</h3>
                     <p className="container" style={{
                         maxWidth: "400px",
@@ -50,6 +71,7 @@ class Profile extends Component {
                     }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum quas eos, vel voluptates consequatur sed nemo, exercitationem et unde minus distinctio iure iste maxime eaque officiis accusantium! Deserunt, placeat.</p>
                 </div>
                 <button onClick={this.logout} type="submit">Logout</button>
+            </div>
             </div>
         );
     }
