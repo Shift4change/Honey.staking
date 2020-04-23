@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { storage } from '../firebase'
 import axios from "axios"
 
 class Profile extends Component {
@@ -8,30 +9,47 @@ class Profile extends Component {
         this.state = {
             first_name: "",
             errors: {},  
-            selectedFile: null
+            img:null,
+            url: ''
         }
+      this.handleChange = this.handleChange.bind(this);
+      this.handleUpload = this.handleUpload.bind(this);
     }
 
-  fileSelectedHandler = event => {
-    this.setState({
-        selectedFile:event.target.files[0]
-    })
-      console.log(event.target.files[0]);
-  }
-  fileUploadHandle =() => {
-     axios.post('')
-  }
-    //set up edit functionality 
-    
-    // handleFormChange(event) {
-    //     console.log("handle change", event)
-    
-    // }
+    handleChange = e => {
+        if (e.target.files[0]) {
+         const img = e.target.files[0];
+            this.setState(() =>({img}));        
+        }
+        console.log(e.target.files[0])
+    }
+    handleUpload = () => {
+        const { img } = this.state;
+        const uploadTask = storage.ref(`images/${img.name}`).put(img);
+        uploadTask.on('state_changed', 
+        (snapshot) => {
+            //progress function ...
+        }, 
+        (error) => {
+            //error function ...
+            console.log(error);
+        }, 
+        () => {
+            //complete function ...
+            storage.ref('images')
+            .child(img.name)
+            .getDownloadURL()
+            .then(url => {
+                console.log(url);
+            this.setState({url});
+            })
+        });
+    }
+
     //setting name to profile page
     componentWillMount() {
         this.setState({
             first_name: localStorage.getItem("firstName"),
-            selectedFile: localStorage.getItem("name")
             
         })
     }
@@ -58,12 +76,12 @@ class Profile extends Component {
                 }}
                 >Hello {this.state.first_name}</h1>
                 <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3hESwg2C1h208A1VDc1hglIOGz_rWrqtMxcyQHzd5VUBAYhd_&usqp=CAU" alt="profilepic" style={{
+                    <img src={this.state.url || 'https://www.jing.fm/clipimg/detail/293-2930824_corporate-png-images-transparent-png-user-placeholder.png'} alt="profilepic" style={{
                         borderRadius: "100px",
                         position: "relative"
                     }} />
-                    <input type="file" onChange={this.fileSelectedHandler} htmlvalue="Upload" className="uploadPic"/>
-                    <button onClick={this.fileSelectedHandler}>Upload</button>
+                    <input type="file" onChange={this.handleChange} htmlvalue="Upload" className="uploadPic"/>
+                    <button onClick={this.handleUpload}>Upload</button>
                     <h3>Bio:</h3>
                     <p className="container" style={{
                         maxWidth: "400px",

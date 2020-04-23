@@ -8,12 +8,10 @@ export default function Learncrypto(){
     );
 }
 
-// References for Crypto vidoes and new sites
+
 // https://cointelegraph.com/
 // https://www.coindesk.com/
 
 // https://medium.com/@stevekrohn/everything-you-need-to-know-about-staking-coins-686ea95041c
 
 // https://trustwallet.com/staking/
-
-// Videos
