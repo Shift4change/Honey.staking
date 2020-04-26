@@ -5,11 +5,11 @@ import React, { Component } from "react"
 import cent from "../components/assets/img/cent.png"
 import decent from "../components/assets/img/decent.png"
 // import vs from "../components/assets/img/vs.png"
-import solve8 from "../components/assets/img/solve8.jpeg"
+// import solve8 from "../components/assets/img/solve8.jpeg"
 // import solve7 from "../components/assets/img/solve7.jpeg"
 import bitcoin1 from "../components/assets/img/bitcoin1.jpeg"
 import tree from "../components/assets/img/tree.png"
-import sky from "../components/assets/img/sky1.jpeg"
+// import sky from "../components/assets/img/sky1.jpeg"
 class Home extends Component {
     render() {
         return (
