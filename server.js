@@ -106,7 +106,7 @@ app.post('/api/logout', async (req, res) => {
 })
 
 app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, "client/build/index.html"));
+  res.sendFile(path.join(__dirname, "client/public/index.html"));
 });
 
 // Start the API server
