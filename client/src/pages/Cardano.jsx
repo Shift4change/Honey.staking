@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 // import cardano from "./components/cardano.svg/"
-import cardano from "../components/assets/img/cardanoada.jpg"
+// import cardano from "../components/assets/img/cardanoada.jpg"
 
 class Cardano extends Component {
     render() {
