@@ -92,16 +92,16 @@ class Cryptocurrencies extends Component {
             </tbody>
         </table>
             <h2>Time Until Bitcoin Halfening:</h2>
-            <ReactMomentCountDown style={{
+            {/* <ReactMomentCountDown style={{
                 marginLeft: "20px"
-            }} toDate={dateInFuture} targetFormatMask='DD:HH:mm:ss'></ReactMomentCountDown>
+            }} toDate={dateInFuture} targetFormatMask='DD:HH:mm:ss'></ReactMomentCountDown> */}
             <div className="card col-xs-12" style={{
                 textAlign: "center",
                 padding: "20px",
                 backgroundColor: "#5FDADF"
             }}>
                 <div className="card-image col-xs-12">
-                    <img src={coindesk} alt="coindesk" class="center"></img>
+                    <img src={coindesk} alt="coindesk" className="center"></img>
                 </div>
                 <div className="card-header">
                     <div className="card-title h5">CoinDesk</div>
@@ -110,7 +110,7 @@ class Cryptocurrencies extends Component {
                 <div className="card-body">
                     Click here to access one of the best cryptocurrency news sites for your educational needs and all updates!
                     </div>
-                <div class="card-footer">
+                <div className="card-footer">
                     <a href="https://www.coindesk.com/" target="_blank" rel="noopener noreferrer"><button>Click Here</button></a>
                 </div>
                 {/* <div class="card-footer">
@@ -124,7 +124,7 @@ class Cryptocurrencies extends Component {
                 backgroundColor: "#5FDADF"
             }}>
                 <div className="card-image col-xs-12">
-                    <img src={cointelegraph} alt="cointelegraph" class="center"></img>
+                    <img src={cointelegraph} alt="cointelegraph" className="center"></img>
                 </div>
                 <div className="card-header">
                     <div className="card-title h5">COINTELEGRAPH</div>
@@ -133,7 +133,7 @@ class Cryptocurrencies extends Component {
                 <div className="card-body">
                     Click here to access one of the best cryptocurrency news sites for your educational needs and all updates!
                     </div>
-                <div class="card-footer">
+                <div className="card-footer">
                     <a href="https://www.cointelegraph.com/" target="_blank" rel="noopener noreferrer"><button>Click Here</button></a>
                 </div>
                 {/* <div class="card-footer">
@@ -147,7 +147,7 @@ class Cryptocurrencies extends Component {
                 backgroundColor: "#5FDADF"
             }}>
                 <div className="card-image col-xs-12">
-                    <img src={blockchain} alt="blockchain" class="center"></img>
+                    <img src={blockchain} alt="blockchain" className="center"></img>
                 </div>
                 <div className="card-header">
                     <div className="card-title h5">Blockchain and Cryptocurrency</div>

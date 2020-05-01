@@ -52,19 +52,19 @@ class Cardano extends Component {
 
                             </ul>
                         </div>
-                        <div class="card">
-                  <div class="card-image"><img class="img-responsive" src="" alt=""/></div>
-                  <div class="card-header">
-                  <div class="card-subtitle text-gray">Ouroboros Chronos: Proof-of-Stake </div>
-                    <div class="card-title h5"><a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://eprint.iacr.org/2019/838.pdf">Read the Paper</a></div>
+                        <div className="card">
+                  <div className="card-image"><img className="img-responsive" src="" alt=""/></div>
+                  <div className="card-header">
+                  <div className="card-subtitle text-gray">Ouroboros Chronos: Proof-of-Stake </div>
+                    <div className="card-title h5"><a className="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://eprint.iacr.org/2019/838.pdf">Read the Paper</a></div>
                     <br></br>
-                    <div class="card-subtitle text-gray">Hydra: Fast Isomorphic State Channels</div>
-                    <div class="card-title h5"><a class="btn btn-primary" href="#cards">Read the Paper</a></div>
+                    <div className="card-subtitle text-gray">Hydra: Fast Isomorphic State Channels</div>
+                    <div className="card-title h5"><a className="btn btn-primary" href="#cards">Read the Paper</a></div>
                    
-                    {/* <div class="card-subtitle text-gray">Software and hardware</div> */}
+                    {/* <div className="card-subtitle text-gray">Software and hardware</div> */}
                   </div>
-                  <div class="card-body">Find more peer reviewed papers and learn more about IOHK </div>
-                  <div class="card-footer"><a class="btn btn-primary" target="_blank" rel="noopener noreferrer"  href="https://iohk.io/en/research/library/">IOHK Library</a> <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"  href="https://iohk.io/en/research/researchers/">Researchers</a></div>
+                  <div className="card-body">Find more peer reviewed papers and learn more about IOHK </div>
+                  <div className="card-footer"><a className="btn btn-primary" target="_blank" rel="noopener noreferrer"  href="https://iohk.io/en/research/library/">IOHK Library</a> <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"  href="https://iohk.io/en/research/researchers/">Researchers</a></div>
                 </div>
                      
                       

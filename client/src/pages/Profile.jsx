@@ -10,15 +10,24 @@ class Profile extends Component {
         this.state = {
             first_name: "",
             errors: {},
-            img: null,
+            img: "",
             url: '',
-            name:'',
+          
             show : false
          
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleUpload = this.handleUpload.bind(this);
 
+    }
+    handleEdit = e => {
+      e.preventDefault()
+      const { show } = this.state;
+      this.setState({ show : !show})
+    //   const { img } = this.state;
+      console.log("edit button click")
+
+      
     }
 
     handleChange = e => {
@@ -28,16 +37,20 @@ class Profile extends Component {
         }
         console.log(e.target.files[0])
     }
-    handleUpload = () => {
+    handleUpload = e => {
+        e.preventDefault()
+    
         const { show } = this.state;
         this.setState({ show : !show})
         const { img } = this.state;
-        const { name } = this.state;
+        
         const uploadTask = storage.ref(`images/${img.name}`).put(img);
+       
         uploadTask.on('state_changed',
-            (snapshot) => {
+            (snapshot) => {  
                 //progress function ...
             },
+          
             (error) => {
                 //error function ...
                 console.log(error);
@@ -75,7 +88,7 @@ class Profile extends Component {
                 <div className="card">
                     <h1>Hello {this.state.first_name}</h1>
                     <img src={this.state.url || "https://www.pngitem.com/pimgs/m/504-5040528_empty-profile-picture-png-transparent-png.png"} alt="Avatar" className="img" />
-                    <button className="editBio" onClick={this.handleUpload}>✎</button>
+                    <button className="editBio" onClick={this.handleEdit}>✎</button>
                     { this.state.show && <Input/>}
                     <div className="container">
                         <textarea placeholder="Tell us about yourself!" cols="30" rows="2" className="bioInfo"></textarea>
@@ -90,8 +103,11 @@ class Profile extends Component {
 class Input extends Component {
     render () {
         return(
+            <>
             <input type="file" onChange={this.handleChange} htmlvalue="Upload" className="uploadPic"/>
-        )
+        <button  htmlvalue="Upload" type="file" onClick={this.handleUpload}>Upload</button>
+        </>
+            )
     }
 }
 

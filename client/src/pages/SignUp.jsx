@@ -60,7 +60,7 @@ class SignUp extends Component {
                     paddingTop: "100px"
                 }}>
                 <form className="form-group">
-                    <label className="form-label" for="input-example-1">First Name</label>
+                    <label className="form-label" htmlfor="input-example-1">First Name</label>
                     <input className="form-input" type="text" name="first_name" value={this.state.first_name} id="input-example-1" onChange={this.handleChange} placeholder="First Name" required />
                     <label className="form-label" for="input-example-1">Last Name</label>
                     <input className="form-input" type="text" name="last_name" value={this.state.last_name} id="input-example-1" onChange={this.handleChange} placeholder="Last Name" required />
