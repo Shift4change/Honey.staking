@@ -21,6 +21,10 @@ const userSchema = new Schema({
     confirm_password: {
         type: String,
         require: true
+    },
+    img:{
+         data: Buffer,
+         contentType: String 
     }
 }, {
     timestamps: true
