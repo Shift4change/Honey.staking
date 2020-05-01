@@ -5,11 +5,11 @@ import React, { Component } from "react"
 import cent from "../components/assets/img/cent.png"
 import decent from "../components/assets/img/decent.png"
 // import vs from "../components/assets/img/vs.png"
-import solve8 from "../components/assets/img/solve8.jpeg"
+// import solve8 from "../components/assets/img/solve8.jpeg"
 // import solve7 from "../components/assets/img/solve7.jpeg"
 import bitcoin1 from "../components/assets/img/bitcoin1.jpeg"
 import tree from "../components/assets/img/tree.png"
-import sky from "../components/assets/img/sky1.jpeg"
+// import sky from "../components/assets/img/sky1.jpeg"
 class Home extends Component {
     render() {
         return (
@@ -80,7 +80,7 @@ class Home extends Component {
                     <div className="row">
                         <div className="column2">
                             <div id="decent1">
-                                <img src={decent} align="left"></img>
+                                <img src={decent} alt="" align="left"></img>
                             </div>
 
 
@@ -116,7 +116,7 @@ class Home extends Component {
 
                         <div id="decent2">
 
-                            <img style={{ height: "450px" }} src={bitcoin1} align="left"></img>
+                            <img style={{ height: "450px" }} src={bitcoin1} alt="" align="left"></img>
                         </div>
 
                         <h6>After the 2008 financial crash and bailout of the "to-big to fail" corporations and banks, </h6>
