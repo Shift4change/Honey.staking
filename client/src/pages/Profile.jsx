@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { storage } from '../firebase';
+// import { storage } from '../firebase';
 import "../components/assets/Profile.css"
 import axios from "axios";
 
@@ -33,25 +33,26 @@ class Profile extends Component {
         this.setState({ show : !show})
         const { img } = this.state;
         const { name } = this.state;
-        const uploadTask = storage.ref(`images/${img.name}`).put(img);
-        uploadTask.on('state_changed',
-            (snapshot) => {
-                //progress function ...
-            },
-            (error) => {
-                //error function ...
-                console.log(error);
-            },
-            () => {
-                //complete function ...
-                storage.ref('images')
-                    .child(img.name)
-                    .getDownloadURL()
-                    .then(url => {
-                        console.log(url);
-                        this.setState({ url });
-                    })
-            });
+        // const uploadTask = storage.ref(`images/${img.name}`).put(img);
+        // // uploadTask.on('state_changed',
+        //     (snapshot) => {
+        //         //progress function ...
+        //     },
+            // (error) => {
+            //     //error function ...
+            //     console.log(error);
+            // }
+            // ,
+            // () => {
+            //     //complete function ...
+            //     // storage.ref('images')
+            //         .child(img.name)
+            //         .getDownloadURL()
+            //         .then(url => {
+            //             console.log(url);
+            //             this.setState({ url });
+            //         })
+            // });
     }
 
     //setting name to profile page
