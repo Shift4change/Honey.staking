@@ -39,7 +39,7 @@ class Cardano extends Component {
                     <div className="row">
                         <div className="column">
 
-                            <h5>We are exited about Cardano</h5>
+                            <h5>We are excited about Cardano</h5>
                             <h5>The First blockchain protocol evolved out of a scientific philosophy and a research-first approach</h5>
                             <ul>
                                 <li>Cardano is a public blockchain and a cryptocurrency project </li>

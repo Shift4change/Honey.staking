@@ -1,5 +1,4 @@
 const express = require("express");
-const fileUpload=require('express-fileupload');
 const db = require('./models')
 const mongoose = require("mongoose");
 // const routes = require("./routes");
@@ -12,8 +11,6 @@ require('dotenv').config()
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-app.use(fileUpload());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -111,24 +108,6 @@ app.post('/api/logout', async (req, res) => {
 app.use(function(req, res) {
   res.sendFile(path.join(__dirname, "client/public/index.html"));
 });
-
-//upload file
-app.post('/upload',(req,res)=> {
-  const {img}=req.body
-  if (req.files === null) {
-    return res.status(400).json({msg:'No file Uploaded'});
-  }
-  const file=req.files.file;
-  const icon= await db.user.findOne({img})
-  file.mv(`${__dirname}/client/public.uploads/${file.name}`, err =>{
-    if (err) {
-      console.error(err);
-      return res.status(500).send(err);
-    }
-    res.json({fileName: file.name, filePath:`/uploads/${file.name}`});
-  })
-})
-
 
 // Start the API server
 app.listen(PORT, function() {

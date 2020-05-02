@@ -10,7 +10,6 @@ import "./components/assets/scss/signup.scss";
 import "./components/assets/scss/login.scss";
 import "./components/assets/scss/wallets.scss";
 
-
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import Cryptomarkets from './components/Cryptomarkets';
 import "./components/assets/scss/cardano.scss";
@@ -38,6 +37,7 @@ import login from "./components/login.svg"
 import Profile from "./pages/Profile"
 import signup from "./components/sign-up.svg"
 import profile from "./components/avatar.svg"
+
 
 function App() {
   const navLinks = [
@@ -90,8 +90,7 @@ function App() {
       text: "Profile",
       path: "/profile",
       icon: profile
-    },
-  
+    }
 
 
   ]
@@ -124,6 +123,7 @@ function App() {
         <Login path="/login" />
         <SignUp path="/signup" />
         <Profile path="/profile"></Profile>
+
       </Router>
       {/* </div> */}
     </div>
