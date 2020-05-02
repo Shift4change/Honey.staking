@@ -31,8 +31,8 @@ class Profile extends Component {
     handleUpload = () => {
         const { show } = this.state;
         this.setState({ show : !show})
-        const { img } = this.state;
-        const { name } = this.state;
+        // const { img } = this.state;
+        // const { name } = this.state;
         // const uploadTask = storage.ref(`images/${img.name}`).put(img);
         // // uploadTask.on('state_changed',
         //     (snapshot) => {
