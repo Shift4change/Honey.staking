@@ -1,0 +1,62 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    position: relative;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color:lightgray;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+h1{
+    text-align: center;
+}
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 50%;
+  width:30%;
+}
+.bioInfo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 0px; */
+    /* position: relative; */
+    /* top: 30px; */
+    width: 30%;
+    text-align: center;
+    border-color: lightgray;
+    color: black;
+    overflow: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-style: 30px;
+     resize: none;
+}
+input{
+    border-color:lightgray;
+    
+}
+.editBio{
+    border-color: black;
+    position: relative;
+    left: 390px;
+    bottom: 40px;
+    
+}
