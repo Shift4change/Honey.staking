@@ -4,13 +4,16 @@ const mongoose = require("mongoose");
 // const routes = require("./routes");
 const path = require("path");
 const app = express();
-const PORT = process.env.PORT || 3001;
-const bcrypt = require('bcryptjs')
-const jwt = require('jsonwebtoken')
-require('dotenv').config()
+const PORT = process.env.PORT || 3000;
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+// const passport = require('passport');
+require('dotenv').config();
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// app.use(passport.initialize());
+// app.use(passport.session());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -60,6 +63,11 @@ app.post("/api/createuser", async (req, res) => {
     console.log(err)
   }
 })
+
+// app.post("/api/login", 
+// passport.authenticate("local", { successRedirect: "/profile",
+//                                  failureRedirect: "/api/login",
+//                                   failureFlash: true  }));
 
 app.post("/api/login", async (req, res) => {
   try {

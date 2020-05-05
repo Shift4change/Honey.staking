@@ -9,8 +9,7 @@ const exampleUser = [
         first_name: "Bob",
         last_name: "Dylan",
         email: "bobdylan@bobdylan.com",
-        password: "12345678",
-        // date: new Date(Date.now())
+        password: "12345678"
     }
 ]
 
